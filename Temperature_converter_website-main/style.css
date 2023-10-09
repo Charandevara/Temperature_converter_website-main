@@ -1,0 +1,105 @@
+/* Neon Temperature Converter Styles */
+
+/* Body */
+body {
+  background-color: #000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Container */
+.container {
+  width: 500px;
+  background-color: #000;
+  border: 2px solid #0dfe00;
+  padding: 20px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(13, 254, 0, 0.4);
+  text-align: center;
+  transform: scale(1.1);
+}
+
+/* Headings */
+.title {
+  font-size: 36px;
+  color: #0dfe00;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 24px;
+  color: #33ccff;
+  margin-bottom: 20px;
+}
+
+/* Input */
+input {
+  width: 150px;
+  padding: 10px;
+  margin: 10px auto;
+  display: block;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  background-color: #fff;
+  font-size: 18px;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Convert Button */
+.convert-button {
+  background-color: #33ccff;
+  color: #fff;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Output Container */
+.output-container {
+  margin-top: 20px;
+}
+
+/* Output */
+output {
+  background-color: #b3ff00;
+  color: #110000;
+  padding: 15px 30px;
+  margin-top: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 20px;
+  font-family: Arial, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 0 0 10px rgba(13, 254, 0, 0.4);
+}
+
+/* Neon Glow Effect */
+.container, input, .convert-button, output {
+  box-shadow: 0 0 10px rgba(0, 251, 255, 0.571), 0 0 20px rgba(0, 224, 254, 0.604), 0 0 30px rgba(0, 224, 254, 0.566);
+  animation: glow 1s infinite alternate;
+}
+
+@keyframes glow {
+  0% {
+    box-shadow: 0 0 20px rgba(13, 254, 0, 0.4), 0 0 40px rgba(13, 254, 0, 0.4), 0 0 60px rgba(13, 254, 0, 0.4);
+  }
+  100% {
+    box-shadow: 0 0 30px rgba(13, 254, 0, 0.4), 0 0 60px rgba(13, 254, 0, 0.4), 0 0 90px rgba(13, 254, 0, 0.4);
+  }
+}
